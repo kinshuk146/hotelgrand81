@@ -1,4 +1,12 @@
-.inline{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-    font-weight: bold  !important;
+.navbar-brand,.nav-item{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    opacity: 1;
+}
+
+.place{
+    z-index: 10;
+}
+
+.background{
+    opacity: 1;
 }
