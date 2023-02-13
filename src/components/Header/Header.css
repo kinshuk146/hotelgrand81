@@ -1,6 +1,3 @@
-.carousel-caption{
-    margin-top: -10rem;
-}
-.inline{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+.carousel-inner {    
+    height:500px;
+  }

@@ -31,8 +31,9 @@ function Navbar() {
           <a class="nav-link disabled">Disabled</a>
         </li>
       </ul>
-      <button type="button" class="btn btn-light">Book Now</button>
+      
     </div>
+    <button type="button" class="btn btn-light">Book Now</button>
   </div>
 </nav>
   )
