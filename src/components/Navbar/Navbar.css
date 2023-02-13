@@ -1,12 +1,12 @@
-.navbar-brand,.nav-item{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
-    opacity: 1;
+.navimage{
+    padding-left: 1rem;
 }
 
-.place{
-    z-index: 10;
-}
+.navbar-nav .nav-item .nav-link {
+    color: black;
 
-.background{
-    opacity: 1;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: white;
 }
