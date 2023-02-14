@@ -1,3 +1,52 @@
-.carousel-inner {    
-    height:500px;
+@media only screen and (min-width: 992px)
+{
+    .carousel-inner {
+      height: 600px;
+  }
+  
+  .carousel-item, .carousel-item img {
+      height: 600px;
+    width:100%;
+  }
+  
+  } 
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner {
+      height: 400px;
+  }
+  
+  .carousel-item, .carousel-item img {
+      height: 400px;
+    width:100%;
+  }
+  
+  } 
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 767px) {
+      .carousel-inner {
+      height: 200px;
+  }
+  
+  .carousel-item, .carousel-item img {
+      height: 200px;
+    width:100%
+  }
+  }
+
+  .carousel-caption
+  {
+    margin-bottom: 20rem;
+    margin-right: 40rem;
+
+  }
+
+  .carousel-caption h3{
+    text-align: left;
+  }
+
+  .carousel-caption p{
+    text-align: left; 
   }
