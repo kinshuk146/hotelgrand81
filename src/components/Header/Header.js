@@ -3,9 +3,8 @@ import './Header.css'
 
 function Header() {
     return (
-        //<div>
-        <div >
-            <div id="carouselExampleCaptions" class="carousel slide">
+        <div className="header">
+            <div id="carouselExampleCaptions carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-pause="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -14,7 +13,7 @@ function Header() {
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-md-block" >
                             <h3>First slide label</h3>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
@@ -34,14 +33,7 @@ function Header() {
                             </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                
             </div>
             </div>
     )
