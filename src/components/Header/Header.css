@@ -1,5 +1,5 @@
 .header{
-  margin-top: -2rem;
+  margin-top: -1.1rem;
 }
 
 @media only screen and (min-width: 992px)
@@ -53,4 +53,6 @@
 
   .carousel-caption p{
     text-align: left; 
+    margin-left: auto;
+  margin-right: auto;
   }

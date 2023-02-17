@@ -1,8 +1,12 @@
-import React from 'react'
+
 import './Header.css'
+import * as React from 'react';
+
+
 
 function Header() {
     return (
+        <>
         <div className="header">
             <div id="carouselExampleCaptions carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-pause="false">
                 <div class="carousel-indicators">
@@ -36,6 +40,8 @@ function Header() {
                 
             </div>
             </div>
+            
+            </>
     )
 }
 

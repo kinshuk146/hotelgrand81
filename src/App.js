@@ -3,12 +3,15 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Form from './components/Form/Form';
+import About from './components/About/About'
+
 function App() {
   return (
     <>
     <Navbar/>
     <Header/>
     <Form/>
+    <About/>
     </>
   );
 }
