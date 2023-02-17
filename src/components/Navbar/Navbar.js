@@ -4,13 +4,19 @@ import './Navbar.css'
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-bg sticky-top ">
+    <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style={{color:'white'}}><h3>Hotel Grand 81</h3></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <a class="navbar-brand" href="#" style={{color:'white'}}><h3>Hotel Grand 81</h3></a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#" style={{color:'white'}}>Home</a>
@@ -33,7 +39,7 @@ function Navbar() {
           <a class="nav-link disabled" style={{color:'white'}}>Disabled</a>
         </li>
       </ul>
-      
+      </div>
     </div>
     <button type="button" class="btn btn-light rounded-0"><div className="Book">BOOK NOW</div></button>
   </div>
