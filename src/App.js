@@ -4,8 +4,10 @@ import Header from './containers/Header/Header';
 import Form from './containers/Form/Form';
 import About from './containers/About/About';
 import InfoCarousel from './containers/InfoCarousel/InfoCarousel';
+import ReactDOM from "react-dom/client";
 import Footer from './containers/Footer/Footer'
 import { createRoot } from "react-dom/client";
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -14,7 +16,7 @@ import {
   Routes,
   Link,
 } from "react-router-dom";
-import ReactDOM from "react-dom/client";
+import MyMap from './components/MyMap';
 
 
 export default function App() {
@@ -22,7 +24,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<><Navbar/><Header/><Form/><About/><InfoCarousel/><Footer/></>}></Route>
-        <Route path="/book" element={<><Navbar/><Header/><Form/><About/><InfoCarousel/><Footer/></>}></Route>
+        <Route path="/contact" element={<><Navbar/><Header/><MyMap/><Footer/></>}></Route>
       </Routes>
     </BrowserRouter>
   );
