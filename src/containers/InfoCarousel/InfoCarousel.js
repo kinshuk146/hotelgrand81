@@ -9,8 +9,8 @@ var settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 3,
+  slidesToScroll: 1,
   initialSlide: 0,
   autoplay:true,
   responsive: [
@@ -51,6 +51,21 @@ function InfoCarousel() {
     <div className="container-sm">
     <div className="container-sm">
   <Slider {...settings}>
+    <div className="container-sm">
+      <ImageCarousel/>
+    </div>
+    <div className="container-sm">
+      <ImageCarousel/>
+    </div>
+    <div className="container-sm">
+      <ImageCarousel/>
+    </div>
+    <div className="container-sm">
+      <ImageCarousel/>
+    </div>
+    <div className="container-sm">
+      <ImageCarousel/>
+    </div>
     <div className="container-sm">
       <ImageCarousel/>
     </div>

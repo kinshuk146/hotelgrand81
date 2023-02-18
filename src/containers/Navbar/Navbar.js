@@ -39,7 +39,8 @@ function Navbar() {
   })
 
   return (
-    <nav className={`navbar ${navbar ? "bg-black" : ""} navbar-expand-lg fixed-top`}>
+    <>
+<nav className={`navbar ${navbar ? "bg-black" : ""} navbar-expand-lg fixed-top`}>
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -84,6 +85,7 @@ function Navbar() {
     <button type="button" class="btn border border-white rounded-0"><div style={{color:'white'}}>BOOK NOW</div></button>
   </div>
 </nav>
+</>
   )
 }
 
