@@ -47,6 +47,7 @@ var settings = {
 
 function InfoCarousel() {
   return(
+    <div className="info">
     <div className="container-sm">
     <div className="container-sm">
     <div className="container-sm">
@@ -79,6 +80,7 @@ function InfoCarousel() {
       <ImageCarousel/>
     </div>
   </Slider>
+  </div>
   </div>
   </div>
   </div>
