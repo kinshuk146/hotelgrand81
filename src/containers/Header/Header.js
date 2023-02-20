@@ -8,7 +8,7 @@ function Header() {
     return (
         <>
         <div className="header">
-            <div id="carouselExampleCaptions carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-pause="false">
+            <div id="carouselExampleCaptions carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" pause="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
