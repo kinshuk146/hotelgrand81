@@ -25,6 +25,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<><Navbar/><Header/><Form/><About/><InfoCarousel/><Footer/></>}></Route>
         <Route path="/contact" element={<><Navbar/><Header/><MyMap/><Footer/></>}></Route>
+        <Route path="/rooms" element={<><Navbar/><Header/><Footer/></>}></Route>
       </Routes>
     </BrowserRouter>
   );

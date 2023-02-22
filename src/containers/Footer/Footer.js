@@ -11,6 +11,7 @@ import { YouTube } from '@mui/icons-material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
+import './Footer.css'
 
 function Copyright() {
     return (
@@ -57,18 +58,18 @@ export default function StickyFooter() {
                                         <div class="col-lg">
                                             <ul style={{ listStyle: 'none' }}>
                                                 <h4>Our Services</h4>
-                                                <li>Rooms</li>
-                                                <li>Banquet Hall</li>
-                                                <li>Restaurant</li>
+                                                <li><a>Rooms</a></li>
+                                                <li><a>Banquet Hall</a></li>
+                                                <li><a>Restaurant</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm">
                                             <ul style={{ listStyle: 'none' }}>
                                                 <h4>Events</h4>
-                                                <li>Weddings</li>
-                                                <li>Corporate Meetings</li>
-                                                <li>Birthday Parties</li>
-                                                <li>Kitty</li>
+                                                <li><a>Weddings</a></li>
+                                                <li><a>Corporate Meetings</a></li>
+                                                <li><a>Birthday Parties</a></li>
+                                                <li><a>Kitty</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg">
@@ -106,8 +107,8 @@ export default function StickyFooter() {
                                         </div>
                                         <div class="col-sm">
                                             <ul style={{listStyle:'none'}}>
-                                                <li>Careers</li>
-                                                <li>Terms And Conditions</li>
+                                                <li><a>Careers</a></li>
+                                                <li><a>Terms And Conditions</a></li>
                                                 <li><CallIcon fontSize='large'/><>      </><EmailIcon fontSize='large'/></li>
                                             </ul>
                                         </div>

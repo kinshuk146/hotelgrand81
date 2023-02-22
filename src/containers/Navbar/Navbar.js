@@ -54,7 +54,7 @@ function Navbar() {
       <div class="offcanvas-body">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#" style={{color:'white'}}>Rooms</a>
+          <a class="nav-link" href="rooms" style={{color:'white'}}>Rooms</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" style={{color:'white'}}>Dining</a>
@@ -68,7 +68,7 @@ function Navbar() {
       </ul>
       </div>
     </div>
-    <button type="button" class="btn border border-white rounded-0"><div style={{color:'white'}}>BOOK NOW</div></button>
+    <button type="button" class="btn border border-white rounded-0"><div style={{color:'white'}}><a>BOOK NOW</a></div></button>
   </div>
 </nav>
 </>
