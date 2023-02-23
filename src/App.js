@@ -7,6 +7,7 @@ import InfoCarousel from './containers/InfoCarousel/InfoCarousel';
 import ReactDOM from "react-dom/client";
 import Footer from './containers/Footer/Footer'
 import { createRoot } from "react-dom/client";
+import Rooms from './containers/Rooms/Rooms';
 
 import {
   createBrowserRouter,
@@ -25,7 +26,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<><Navbar/><Header/><Form/><About/><InfoCarousel/><Footer/></>}></Route>
         <Route path="/contact" element={<><Navbar/><Header/><MyMap/><Footer/></>}></Route>
-        <Route path="/rooms" element={<><Navbar/><Header/><Footer/></>}></Route>
+        <Route path="/rooms" element={<><Navbar/><Header/><Rooms/><Footer/></>}></Route>
       </Routes>
     </BrowserRouter>
   );
