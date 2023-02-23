@@ -9,7 +9,6 @@ function Navbar() {
 
   //navbar scroll changeBackground function
   const changeBackground = () => {
-    console.log(window.scrollY)
     if (window.scrollY >= 50) {
       setNavbar(true)
     } else {
@@ -18,7 +17,6 @@ function Navbar() {
   }
 
   const hideNavbar = () => {
-    console.log(window.scrollY)
     if (window.scrollY < 20) {
       setshowNavbar(true)
     } else {

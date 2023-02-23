@@ -58,18 +58,18 @@ export default function StickyFooter() {
                                         <div class="col-lg">
                                             <ul style={{ listStyle: 'none' }}>
                                                 <h4>Our Services</h4>
-                                                <li><a>Rooms</a></li>
-                                                <li><a>Banquet Hall</a></li>
-                                                <li><a>Restaurant</a></li>
+                                                <li><a className="footer-link">Rooms</a></li>
+                                                <li><a className="footer-link">Banquet Hall</a></li>
+                                                <li><a className="footer-link">Restaurant</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-sm">
                                             <ul style={{ listStyle: 'none' }}>
                                                 <h4>Events</h4>
-                                                <li><a>Weddings</a></li>
-                                                <li><a>Corporate Meetings</a></li>
-                                                <li><a>Birthday Parties</a></li>
-                                                <li><a>Kitty</a></li>
+                                                <li><a className="footer-link">Weddings</a></li>
+                                                <li><a className="footer-link">Corporate Meetings</a></li>
+                                                <li><a className="footer-link">Birthday Parties</a></li>
+                                                <li><a className="footer-link">Kitty</a></li>
                                             </ul>
                                         </div>
                                         <div class="col-lg">
@@ -77,7 +77,7 @@ export default function StickyFooter() {
                                             <ul style={{ listStyle: 'none' }}>
                                                 <h4>Address</h4>
                                                 <p>Vipul Plaza, First Floor Sector 81, Faridabad, Haryana 121002</p>
-                                                <p>Get Direction</p>
+                                                <p className="footer-link">Get Direction</p>
                                             </ul>
                                         </div>
                                     </div>
@@ -107,9 +107,9 @@ export default function StickyFooter() {
                                         </div>
                                         <div class="col-sm">
                                             <ul style={{listStyle:'none'}}>
-                                                <li><a>Careers</a></li>
-                                                <li><a>Terms And Conditions</a></li>
-                                                <li><CallIcon fontSize='large'/><>      </><EmailIcon fontSize='large'/></li>
+                                                <li><a className="footer-link">Careers</a></li>
+                                                <li><a className="footer-link">Terms And Conditions</a></li>
+                                                <li><CallIcon fontSize='large'/><></><EmailIcon fontSize='large'/></li>
                                             </ul>
                                         </div>
                                     </div>

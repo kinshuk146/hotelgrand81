@@ -2,16 +2,16 @@
     list-style: none;
 }
 
-a {
+.footer-link {
     color: #fff;
     text-decoration: none;
     display: inline-block;
     position: relative;
   }
-  a:hover{
+  .footer-link:hover{
     cursor:pointer;
   }
-  a:after {    
+  .footer-link:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -23,7 +23,7 @@ a {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  a:hover:after { 
+  .footer-link:hover:after { 
     width: 100%; 
     left: 0; 
   }
