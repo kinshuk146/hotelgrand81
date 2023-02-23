@@ -9,15 +9,25 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Box from '@mui/material/Box'
+import { margin } from '@mui/system';
+import  { useState} from "react";
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import RoomPhotoGallery from './RoomPhotoGallery';
 
 const Img = styled('img')({
     margin: 'auto',
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
+    borderRadius:'5%'
 });
 
+
 export default function ComplexGrid(props) {
+
+    //const [width, setWidth] = useState(window.width);
+    //setWidth(window.width/2);
     return (
         <>
         <Paper
@@ -25,6 +35,7 @@ export default function ComplexGrid(props) {
                 p: 2,
                 flexGrow: 1,
                 m: 3,
+                my:5,
                 backgroundColor: (theme) =>
                     theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
             }}
@@ -41,20 +52,21 @@ export default function ComplexGrid(props) {
                             <Typography gutterBottom variant="subtitle1" component="div">
                                 {props.roomName}
                             </Typography>
+                            <Typography variant="body2" color="text.secondary" margin={0}>
+                            </Typography>
                             <Typography variant="body2" gutterBottom>
-                                <div>
+                                <div p={2}>
                                     <Accordion>
                                         <AccordionSummary
                                             expandIcon={<ExpandMoreIcon />}
                                             aria-controls="panel1a-content"
                                             id="panel1a-header"
                                         >
-                                            <Typography>Accordion 1</Typography>
+                                            <Typography>Gallery</Typography>
                                         </AccordionSummary>
                                         <AccordionDetails>
                                             <Typography>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                                malesuada lacus ex, sit amet blandit leo lobortis eget.
+                                                <RoomPhotoGallery maxWidth=""/>
                                             </Typography>
                                         </AccordionDetails>
                                     </Accordion>
@@ -64,7 +76,7 @@ export default function ComplexGrid(props) {
                                             aria-controls="panel2a-content"
                                             id="panel2a-header"
                                         >
-                                            <Typography>Accordion 2</Typography>
+                                            <Typography>Ammenities</Typography>
                                         </AccordionSummary>
                                         <AccordionDetails>
                                             <Typography>
@@ -79,7 +91,7 @@ export default function ComplexGrid(props) {
                                             aria-controls="panel3a-content"
                                             id="panel3a-header"
                                         >
-                                            <Typography>Accordion 3</Typography>
+                                            <Typography>Packages</Typography>
                                         </AccordionSummary>
                                         <AccordionDetails>
                                             <Typography>
@@ -90,13 +102,10 @@ export default function ComplexGrid(props) {
                                     </Accordion>
                                 </div>
                             </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                                ID: 1030114
-                            </Typography>
                         </Grid>
                         <Grid item>
                             <Typography sx={{ cursor: 'pointer' }} variant="body2">
-                                <a >Book Now</a>
+                                <a><Button variant="outlined">Book Now</Button></a>
                             </Typography>
                         </Grid>
                     </Grid>
