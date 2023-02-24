@@ -5,7 +5,7 @@
 @media only screen and (min-width: 992px)
 {
     .carousel-inner {
-      height: 540px;
+      height: 450px;
   }
   
   .carousel-item, .carousel-item img {

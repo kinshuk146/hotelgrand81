@@ -1,7 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import  { useState, useEffect } from "react"
-
+import  { useState, useEffect } from "react";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false)
@@ -66,7 +65,7 @@ function Navbar() {
       </ul>
       </div>
     </div>
-    <button type="button" class="btn border border-white rounded-0"><div style={{color:'white'}}><a>BOOK NOW</a></div></button>
+    <button type="button" class="btn border border-white rounded-0 customButton"><div style={{color:'white'}}><a>BOOK NOW</a></div></button>
   </div>
 </nav>
 </>
