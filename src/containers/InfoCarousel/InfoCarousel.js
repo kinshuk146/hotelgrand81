@@ -53,31 +53,16 @@ function InfoCarousel() {
     <div className="container-sm">
   <Slider {...settings}>
     <div className="container-sm">
-      <ImageCarousel/>
+      <ImageCarousel image="./assets/CarouselHall.jpg" title="Banquet" text="Our five hundred square feet banquet along with our banquet crew is ideal for birthday parties, wedding ceremonies and corporate events."/>
     </div>
     <div className="container-sm">
-      <ImageCarousel/>
+      <ImageCarousel image="./assets/CarouselRooftop.jpg" title="Rooftop Restaurant" text="Be it a new year party, or a private function our rooftop restaurant overlooking the city provides a just perfect location"/>
     </div>
     <div className="container-sm">
-      <ImageCarousel/>
+      <ImageCarousel image="./assets/CarouselBar.jpg" title="Bar" text="We exemplify the uncompromising and passionate devotion to superior wines and alcohol. Our cocktail program offers an immersive experience."/>
     </div>
     <div className="container-sm">
-      <ImageCarousel/>
-    </div>
-    <div className="container-sm">
-      <ImageCarousel/>
-    </div>
-    <div className="container-sm">
-      <ImageCarousel/>
-    </div>
-    <div className="container-sm">
-      <ImageCarousel/>
-    </div>
-    <div className="container-sm">
-      <ImageCarousel/>
-    </div>
-    <div className="container-sm">
-      <ImageCarousel/>
+      <ImageCarousel image="./assets/CarouselBuffet.jpg" title="Exotic Buffet" text="Our buffet has mouthwatering multicuisine dishes which come at reasonable prices. Come and feast and you will never forget! "/>
     </div>
   </Slider>
   </div>

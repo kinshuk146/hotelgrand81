@@ -53,6 +53,7 @@ export default function ComplexGrid(props) {
                                 {props.roomName}
                             </Typography>
                             <Typography variant="body2" color="text.secondary" margin={0}>
+                                {props.roomDesc}
                             </Typography>
                             <Typography variant="body2" gutterBottom>
                                 <div p={2}>

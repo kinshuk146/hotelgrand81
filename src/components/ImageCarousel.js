@@ -11,17 +11,16 @@ export default function ImageCarousel(props) {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
-          image="https://media.cntraveler.com/photos/5c06e5a801ffc86b13da2529/16:9/w_2560%2Cc_limit/The-Oberoi-Udaivilas%2C-Udaipur__2018_Chandni----the-al-fresco-dining---The-Oberoi-Udaivilas%2C-Udaipur.jpg"
+          height="200"
+          image={props.image}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {props.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {props.text}
           </Typography>
         </CardContent>
       </CardActionArea>
