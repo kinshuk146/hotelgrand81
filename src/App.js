@@ -8,6 +8,7 @@ import ReactDOM from "react-dom/client";
 import Footer from './containers/Footer/Footer'
 import { createRoot } from "react-dom/client";
 import Rooms from './containers/Rooms/Rooms';
+import HotelGallery from './containers/HotelGallery/HotelGallery';
 
 import {
   createBrowserRouter,
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/" element={<><Navbar/><Header/><InfoCarousel/><Footer/></>}></Route>
         <Route path="/contact" element={<><Navbar/><Header/><MyMap/><Footer/></>}></Route>
         <Route path="/rooms" element={<><Navbar/><Header/><Rooms/><Footer/></>}></Route>
+        <Route path="/gallery" element={<><Navbar/><Header/><HotelGallery/><Footer/></>}></Route>
       </Routes>
     </BrowserRouter>
   );

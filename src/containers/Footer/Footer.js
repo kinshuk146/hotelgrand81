@@ -46,7 +46,8 @@ export default function StickyFooter() {
                     marginLeft: -1,
                     mt: 'auto',
                     minHeight: '40vh',
-                    backgroundImage: `url(https://wallpaperaccess.com/full/4128940.jpg)`,
+                    backgroundColor:'black'
+                    //backgroundImage: `url(https://wallpaperaccess.com/full/4128940.jpg)`,
                 }
                 }>
                 <Container maxWidth="lg">

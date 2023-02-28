@@ -1,32 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import { useRef, useEffect, useState } from 'react';
-import mapboxgl from 'mapbox-gl';
+import React from "react";
+import GoogleMapReact from 'google-map-react';
+import RoomIcon from '@mui/icons-material/Room';
 
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-function MyMap() {
-  const mapContainer = useRef(null);
-  const map = useRef(null);
-  const [lng, setLng] = useState(-70.9);
-  const [lat, setLat] = useState(42.35);
-  const [zoom, setZoom] = useState(9);
+export default function SimpleMap(){
+  const defaultProps = {
+    center: {
+      lat: 28.38840499409032,
+      lng: 77.34924156754724
+    },
+    zoom: 11
+  };
 
-  mapboxgl.accessToken = 'pk.eyJ1Ijoia2luc2h1azE0NiIsImEiOiJjbGVhN3M2cjMwMGR1M29vNzZpcmdnazlsIn0.3jsgKWBb_LrTW9pXmpS3Yw';
-
-  useEffect(() => {
-    if (map.current) return; // initialize map only once
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/streets-v12',
-      center: [lng, lat],
-      zoom: zoom
-    });
-  });
   return (
-      <>
-      <div ref={mapContainer} className="map-container" />
-      </>
+    // Important! Always set the container height explicitly
+    <div style={{ height: '100vh', width: '100%' }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: "AIzaSyCb18lwQhp7CwG5233PFLnNIIzgXd22yIg" }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+        <RoomIcon
+          lat={28.38840499409032}
+          lng={77.34924156754724}
+          fontSize="large"
+        />
+      </GoogleMapReact>
+    </div>
   );
 }
-export default MyMap;

@@ -53,7 +53,7 @@ function InfoCarousel() {
     <div className="info">
     <div className="container-sm">
     <div className="container-sm">
-    <div className="container-sm">
+    <div className="container-sm ">
   <Slider {...settings}>
     <div className="container-sm">
       <ImageCarousel image="./assets/CarouselHall.jpg" title="Banquet" text="Our five hundred square feet banquet along with our banquet crew is ideal for birthday parties, wedding ceremonies and corporate events."/>

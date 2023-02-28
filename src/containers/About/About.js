@@ -2,7 +2,7 @@ import React from 'react'
 import Form from '../../containers/Form/Form';
 function About() {
   return (
-    <div>
+    <div style={{marginTop:'0rem'}}>
     <Form/>
     <div class="container text-center">
     <div class="row align-items-start">
