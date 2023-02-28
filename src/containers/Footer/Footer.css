@@ -3,7 +3,7 @@
 }
 
 .footer-link {
-    color: #fff;
+    color: #100c3c;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -19,7 +19,7 @@
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: #100c3c;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }

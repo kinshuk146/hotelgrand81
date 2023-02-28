@@ -15,7 +15,7 @@ import './Footer.css'
 
 function Copyright() {
     return (
-        <Typography variant="body2" color="white">
+        <Typography variant="body2" color="#100c3c">
             {'Copyright © '}
             <Link color="inherit" href="/">
                 Hotel Grand 81
@@ -32,7 +32,7 @@ export default function StickyFooter() {
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                minHeight: '50vh',
+                maxHeight: '30vh',
                 marginTop: '2rem'
             }}
         >
@@ -45,8 +45,7 @@ export default function StickyFooter() {
                     px: 0,
                     marginLeft: -1,
                     mt: 'auto',
-                    minHeight: '40vh',
-                    backgroundColor:'black'
+                    backgroundColor:'#f9f9f9'
                     //backgroundImage: `url(https://wallpaperaccess.com/full/4128940.jpg)`,
                 }
                 }>
@@ -58,7 +57,7 @@ export default function StickyFooter() {
                                     <div class="row">
                                         <div class="col-lg">
                                             <ul style={{ listStyle: 'none' }}>
-                                                <h4>Our Services</h4>
+                                                <h4 style={{color:'#100c3c'}}>OUR SERVICES</h4>
                                                 <li><a className="footer-link">Rooms</a></li>
                                                 <li><a className="footer-link">Banquet Hall</a></li>
                                                 <li><a className="footer-link">Restaurant</a></li>
@@ -66,7 +65,7 @@ export default function StickyFooter() {
                                         </div>
                                         <div class="col-sm">
                                             <ul style={{ listStyle: 'none' }}>
-                                                <h4>Events</h4>
+                                                <h4 style={{color:'#100c3c'}}>EVENTS</h4>
                                                 <li><a className="footer-link">Weddings</a></li>
                                                 <li><a className="footer-link">Corporate Meetings</a></li>
                                                 <li><a className="footer-link">Birthday Parties</a></li>
@@ -76,9 +75,9 @@ export default function StickyFooter() {
                                         <div class="col-lg">
 
                                             <ul style={{ listStyle: 'none' }}>
-                                                <h4>Address</h4>
-                                                <p>Vipul Plaza, First Floor Sector 81, Faridabad, Haryana 121002</p>
-                                                <p className="footer-link">Get Direction</p>
+                                                <h4 style={{color:'#100c3c'}}>ADDRESS</h4>
+                                                <p style={{color:'#100c3c'}}>Vipul Plaza, First Floor Sector 81, Faridabad, Haryana 121002</p>
+                                                <p className="footer-link" style={{color:'#100c3c'}}>Get Direction</p>
                                             </ul>
                                         </div>
                                     </div>
@@ -88,20 +87,20 @@ export default function StickyFooter() {
                                     <div class="row">
                                         <div class="col-sm">
                                             <ul style={{ listStyle: 'none' }}>
-                                                <h4>Connect</h4>
-                                                <li>+91 9953035222</li>
-                                                <li style={{ paddingRight: '1' }}>booking@hotelgrand81.com</li>
+                                                <h4 style={{color:'#100c3c'}}>CONNECT</h4>
+                                                <li style={{color:'#100c3c'}}>+91 9953035222</li>
+                                                <li style={{ paddingRight: '1',color:'#100c3c' }}>booking@hotelgrand81.com</li>
                                             </ul>
                                         </div>
                                         <div class="col-sm">
                                             <ul>
                                                 <img src="https://www.tripadvisor.in/img/cdsi/img2/awards/v2/tchotel_2020_LL-14348-2.png" />
                                                 <div>
-                                                    <div>
-                                                        <InstagramIcon fontSize='large' />
-                                                        <FacebookIcon fontSize='large' />
-                                                        <YouTubeIcon fontSize='large' />
-                                                        <WhatsAppIcon fontSize='large' />
+                                                    <div style={{paddingTop:'2rem'}}>
+                                                        <InstagramIcon fontSize='large' style={{color:'#100c3c'}} />
+                                                        <FacebookIcon fontSize='large' style={{color:'#100c3c'}} />
+                                                        <YouTubeIcon fontSize='large'  style={{color:'#100c3c'}}/>
+                                                        <WhatsAppIcon fontSize='large' style={{color:'#100c3c'}} />
                                                     </div>
                                                 </div>
                                             </ul>
@@ -110,7 +109,7 @@ export default function StickyFooter() {
                                             <ul style={{listStyle:'none'}}>
                                                 <li><a className="footer-link">Careers</a></li>
                                                 <li><a className="footer-link">Terms And Conditions</a></li>
-                                                <li><CallIcon fontSize='large'/><></><EmailIcon fontSize='large'/></li>
+                                                <li><CallIcon fontSize='large' style={{color:'#100c3c'}}/><></><EmailIcon style={{color:'#100c3c'}} fontSize='large'/></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -118,7 +117,7 @@ export default function StickyFooter() {
                             </div>
                         </div>
                     </Typography>
-                    <Copyright  />
+                    <Copyright/>
                 </Container>
             </Box>
         </Box>
