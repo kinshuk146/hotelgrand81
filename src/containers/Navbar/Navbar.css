@@ -1,3 +1,13 @@
-.navcontainer{
-  background-image: url('https://i.ndtvimg.com/i/2017-01/taj-hotel-mumbai_650x400_51484474570.jpg');
+.navbar-custom {
+    background-color: #100c3c;
+    transition:0.3s;
 }
+
+@media only screen and (min-width: 987px) {
+  .navbar-hover:hover{
+    background-color: #100c3c;
+    transition:0.3s;
+  }
+  
+}
+

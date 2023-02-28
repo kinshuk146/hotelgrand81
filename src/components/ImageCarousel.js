@@ -8,7 +8,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 export default function ImageCarousel(props) {
   return (
     <>
-    <Card sx={{ maxWidth: 300 }} square={true}>
+    <Card sx={{ maxWidth: 300 }} square={true} >
       <CardActionArea>
         <CardMedia
           component="img"
@@ -16,7 +16,7 @@ export default function ImageCarousel(props) {
           image={props.image}
           alt="green iguana"
         />
-        <CardContent>
+        <CardContent sx={{ maxWidth: 300 }}>
           <Typography gutterBottom variant="h5" component="div">
             {props.title}
           </Typography>

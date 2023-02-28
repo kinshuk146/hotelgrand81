@@ -32,8 +32,11 @@ function Navbar() {
   })
 
   return (
-    
-      <nav className={`navbar ${navbar ? "bg-dark" : ""}  navbar-expand-lg fixed-top`}>
+      
+      <nav className={`navbar ${navbar ? "navbar-custom" : "navbar-hover"}  navbar-expand-lg fixed-top`}>
+        <div class="container-fluid">
+          s
+        </div>
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
