@@ -32,8 +32,9 @@ export default function StickyFooter() {
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                maxHeight: '30vh',
-                marginTop: '2rem'
+                maxHeight: '60vh',
+                marginTop: '2rem',
+                margin:'auto'
             }}
         >
             <CssBaseline />
@@ -42,7 +43,6 @@ export default function StickyFooter() {
                 component="footer"
                 sx={{
                     py: 3,
-                    px: 0,
                     marginLeft: -1,
                     mt: 'auto',
                     backgroundColor:'#f9f9f9'
@@ -85,13 +85,7 @@ export default function StickyFooter() {
 
                                 <div class="d-flex justify-content-around">
                                     <div class="row">
-                                        <div class="col-sm">
-                                            <ul style={{ listStyle: 'none' }}>
-                                                <h4 style={{color:'#100c3c'}}>CONNECT</h4>
-                                                <li style={{color:'#100c3c'}}>+91 9953035222</li>
-                                                <li style={{ paddingRight: '1',color:'#100c3c' }}>booking@hotelgrand81.com</li>
-                                            </ul>
-                                        </div>
+                                        
                                         <div class="col-sm">
                                             <ul>
                                                 <img src="https://www.tripadvisor.in/img/cdsi/img2/awards/v2/tchotel_2020_LL-14348-2.png" />
