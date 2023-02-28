@@ -9,14 +9,16 @@ import { DesktopDateRangePicker } from '@mui/x-date-pickers-pro/DesktopDateRange
 import { AdapterDayjs } from '@mui/x-date-pickers-pro/AdapterDayjs';
 import  { useState, useEffect } from "react"
 import { styled } from '@mui/system';
+import { shadows } from '@mui/system';
+
 
 const CustomButton = styled(Button)`
-background-color: black;
+background-color: #100c3c;
 color: white;
 
 &:hover {
   background-color: white;
-  color: black;
+  color: #100c3c;
 }`
 
 function Form() {
@@ -36,7 +38,7 @@ function Form() {
                 
               }}
             >
-              <Paper square={true} children={
+              <Paper square={true} sx={{ boxShadow: 3 }}children={
                 <div class="d-flex flex-row mb-3">
                 <div class="p-2 flex-grow-1 mt-2"><DatePicker square={true} /></div>
                 <div class="p-2 mt-2"><CustomButton size="small" variant="contained" sx={{borderRadius:'0'}}>Check Availability</CustomButton></div>

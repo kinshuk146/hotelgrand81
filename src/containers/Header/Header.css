@@ -1,16 +1,26 @@
-/*.header{
-  margin-top: -1.1rem;
+
+.contain {
+  position: relative;
 }
-*/
+
+.image {
+}
+
+
+.overlay {
+  position: absolute; 
+  z-index: 5;
+}
+
 
 @media only screen and (min-width: 992px)
 {
     .carousel-inner {
-      height: 450px;
+      height: 550px;
   }
   
   .carousel-item, .carousel-item img {
-      height: 540px;
+      height: 550px;
     width:100%;
   }
   
@@ -19,11 +29,11 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .carousel-inner {
-      height: 400px;
+      height: 500px;
   }
   
   .carousel-item, .carousel-item img {
-      height: 400px;
+      height: 500px;
     width:100%;
   }
   
@@ -32,11 +42,11 @@
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 767px) {
       .carousel-inner {
-      height: 250px;
+      height: 350px;
   }
   
   .carousel-item, .carousel-item img {
-      height: 250px;
+      height: 350px;
     width:100%
   }
   }

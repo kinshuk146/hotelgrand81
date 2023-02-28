@@ -1,13 +1,12 @@
 import './Header.css'
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import Form from '../Form/Form'
 
 
 function Header() {
     return (
         <>
-        <div className="header">
+        <div className="header contain">
             <div id="carouselExampleCaptions carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" pause="false">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -16,7 +15,7 @@ function Header() {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/homeBackground.jpg" class="d-block w-100" alt="..." />
+                        <img src="./assets/final_Background.jpg" class="d-block w-100 image" alt="..." style={{objectFit:'fill'}}/>
                         <div class="carousel-caption d-none d-md-block" >
                             <h3>First slide label</h3>
                             <p>Some representative placeholder content for the first slide.</p>
@@ -38,6 +37,8 @@ function Header() {
                     </div>
                 </div>
             </div>
+            
+            <div class="overlay container" style={{marginTop:'-10rem'}}><Form/></div>
         </div>
             </>
     )

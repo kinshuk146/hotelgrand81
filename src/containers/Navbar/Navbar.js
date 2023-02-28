@@ -1,6 +1,10 @@
 import React from 'react'
 import './Navbar.css'
 import { useState, useEffect } from "react";
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+import DehazeIcon from '@mui/icons-material/Dehaze';
+
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false)
@@ -33,15 +37,13 @@ function Navbar() {
 
   return (
       
-      <nav className={`navbar ${navbar ? "navbar-custom" : "navbar-hover"}  navbar-expand-lg fixed-top`}>
-        <div class="container-fluid">
-          s
-        </div>
-        <div class="container-fluid">
+      <nav className={`navbar ${navbar ? "navbar-custom" : "navbar-hover"} d-flex justify-content-between navbar-expand-lg fixed-top`}>
+        
+        <div className='d-flex flex-row'>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
+            <DehazeIcon fontSize='large' style={{ color: 'white' }}/>
           </button>
-          <a class="navbar-brand" href="/" style={{ color: 'white' }}><h3>Hotel Grand 81</h3></a>
+          <a class="navbar-brand" href="/" style={{ color: 'white' }}><h3 className="heading">Hotel Grand 81</h3></a>
           <div class="offcanvas offcanvas-start  text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hotel Grand 81</h5>
@@ -50,21 +52,26 @@ function Navbar() {
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="rooms" style={{ color: 'white' }}>Rooms</a>
+                  <a class="nav-link" href="rooms" style={{ color: 'white' }}>ROOMS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" style={{ color: 'white' }}>Dining</a>
+                  <a class="nav-link" href="#" style={{ color: 'white' }}>DINING</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="gallery" style={{ color: 'white' }}>Gallery</a>
+                  <a class="nav-link" href="gallery" style={{ color: 'white' }}>GALLERY</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href='contact' style={{ color: 'white' }}>Contact</a>
+                  <a class="nav-link" href='contact' style={{ color: 'white' }}>CONTACT</a>
                 </li>
               </ul>
             </div>
           </div>
-          <button type="button" class="btn border border-white rounded-0 customButton"><div style={{ color: 'white' }}><a>BOOK NOW</a></div></button>
+        </div>
+        <div className="d-flex flex-row-reverse" style={{ marginRight:'0.25rem',marginLeft:'-1rem'}}>
+          <button type="button" class="btn border border-white rounded-0 customButton"><div style={{ color: 'white'}}><a>BOOK</a></div></button>
+          <EmailIcon fontSize="large" style={{color:'white'}}/>
+          <CallIcon fontSize="large" style={{color:'white'}}/>
+          
         </div>
       </nav>
   )
