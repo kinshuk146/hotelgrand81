@@ -3,10 +3,6 @@
   position: relative;
 }
 
-.image {
-}
-
-
 .overlay {
   position: absolute; 
   z-index: 5;
@@ -28,6 +24,14 @@
       height: 550px;
     width:100%;
   }
+  .mobileResponsiveHeading{
+    margin-top: -15rem;
+    }
+    
+    .mobileResponsiveParagraph{
+    
+    }
+    
   
   } 
 
@@ -41,6 +45,14 @@
       height: 500px;
     width:100%;
   }
+  .mobileResponsiveHeading{
+    margin-top: -15rem;
+    }
+    
+    .mobileResponsiveParagraph{
+    
+    }
+    
   
   } 
   
@@ -54,21 +66,20 @@
       height: 400px;
     width:100%
   }
-  }
+  .mobileResponsiveHeading{
+    margin-top: -18rem !important;
+    font-size:2rem !important;
+    margin-left:0rem !important;
+    }
 
-  .carousel-caption
-  {
-    margin-bottom: 15rem;
-    margin-left: -7rem;
-
-  }
-
-  .carousel-caption h3{
-    text-align: left;
-  }
-
-  .carousel-caption p{
-    text-align: left; 
-    margin-left: auto;
-  margin-right: auto;
+    
+  .mobileResponsiveParagraph{
+    margin-top: -15.5rem !important;
+    font-size:1rem !important;
+    margin-left:0rem !important;
+    }
+    .formResponsive{
+      margin-left:-1rem !important;
+    }
+    
   }

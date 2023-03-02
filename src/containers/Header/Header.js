@@ -19,20 +19,20 @@ function Header(props) {
                     </div>
                 </div>
             </div>
-            <div class="heading overlay container" >
-                <div style={{marginTop:'-22rem',fontSize:'4rem',color:'white'}}>
+            <div class="heading overlay container " >
+                <div className="mobileResponsiveHeading"style={{marginTop:'-22rem',fontSize:'4rem',color:'white',marginLeft:'1rem'}}>
                     {props.heading}
                 </div>
             </div>
             <div class="heading overlay container" >
-                <p style={{marginTop:'-17rem',fontSize:'1rem',color:'white'}}>
+                <p className="mobileResponsiveParagraph"style={{marginTop:'-17rem',fontSize:'1rem',color:'white',marginLeft:'1rem'}}>
                     {props.description}
                 </p>
 
             </div>
             
             <div class="overlay container" >
-                <div style={{marginTop:'-10rem'}}>
+                <div className="formResponsive" style={{marginTop:'-10rem'}}>
                     <Form/>
                 </div>
             </div>

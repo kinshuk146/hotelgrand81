@@ -23,7 +23,7 @@ color: white;
 
 
 
-function Form() {
+function Form(props) {
   const [button, setButtonSize] = useState('small')
 
   const changeButtonSize=()=>{

@@ -44,27 +44,27 @@ function Navbar(props) {
             <DehazeIcon fontSize='large' style={{ color: 'white' }}/>
           </button>
          
-          <div class="offcanvas offcanvas-start  text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
+          <div class="offcanvas offcanvas-start  text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style={{marginRight:'2rem'}}>
+            <div class="offcanvas-header" style={{marginLeft:'2rem'}}>
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hotel Grand 81</h5>
               <button type="button" class="btn-close btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div class="offcanvas-body" style={{marginLeft:'2rem'}}>
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                  <a class="nav-link" href="/" style={{ color: 'white' }}>HOME</a>
+                  <a class="nav-link" href="/" style={{ color: 'white',fontFamily: 'Zilla Slab',fontWeight:'bold'}}>HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="rooms" style={{ color: 'white' }}>ROOMS</a>
+                  <a class="nav-link" href="rooms" style={{ color: 'white',fontFamily: 'Zilla Slab',fontWeight:'bold'}}>ROOMS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://www.grandfiesta81.com/" style={{ color: 'white' }}>DINING</a>
+                  <a class="nav-link" href="https://www.grandfiesta81.com/" style={{ color: 'white',fontFamily: 'Zilla Slab',fontWeight:'bold'}}>DINING</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="gallery" style={{ color: 'white' }}>GALLERY</a>
+                  <a class="nav-link" href="gallery" style={{ color: 'white',fontFamily: 'Zilla Slab',fontWeight:'bold'}}>GALLERY</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href='contact' style={{ color: 'white' }}>CONTACT</a>
+                  <a class="nav-link" href='contact' style={{ color: 'white',fontFamily: 'Zilla Slab',fontWeight:'bold'}}>CONTACT</a>
                 </li>
               </ul>
             </div>
@@ -74,7 +74,7 @@ function Navbar(props) {
         <div className="d-flex flex-row" style={{ marginRight:'0.25rem',marginLeft:'-1rem'}}>
           <CallIcon fontSize="large" style={{color:'white',marginRight:'0.5rem'}}/>
           <EmailIcon fontSize="large" style={{color:'white',marginRight:'1rem'}}/>
-          <button type="button" class="btn border border-white rounded-0 customButton"><div style={{ color: 'white'}}><a>BOOK NOW</a></div></button>
+          <button type="button" class="btn border border-white rounded-0 customButton"><div style={{ color: 'white',fontFamily: 'Zilla Slab',fontWeight:'bold'}}><a>BOOK NOW</a></div></button>
           
           
         </div>

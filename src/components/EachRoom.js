@@ -43,7 +43,7 @@ export default function ComplexGrid(props) {
             <Grid container spacing={2}>
                 <Grid item >
                     <ButtonBase >
-                        <Img width={300} alt="complex" src='https://scontent-bom1-2.xx.fbcdn.net/v/t39.30808-6/302010695_476699401132527_7461209259572218849_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=kf6DDdmEmO0AX_GP-Ze&_nc_ht=scontent-bom1-2.xx&oh=00_AfD02wmnvfcMcrk9ey8dmTSgD3pS5vVMvXh1Pa0Jo3qbTQ&oe=63FB4575' />
+                        <Img width={400} alt="complex" src={props.imagelink} />
                     </ButtonBase>
                 </Grid>
                 <Grid item xs={12} sm container>
@@ -81,8 +81,9 @@ export default function ComplexGrid(props) {
                                         </AccordionSummary>
                                         <AccordionDetails>
                                             <Typography>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                                malesuada lacus ex, sit amet blandit leo lobortis eget.
+
+
+                                                                
                                             </Typography>
                                         </AccordionDetails>
                                     </Accordion>
@@ -96,8 +97,9 @@ export default function ComplexGrid(props) {
                                         </AccordionSummary>
                                         <AccordionDetails>
                                             <Typography>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                                                malesuada lacus ex, sit amet blandit leo lobortis eget.
+                                                
+
+
                                             </Typography>
                                         </AccordionDetails>
                                     </Accordion>
