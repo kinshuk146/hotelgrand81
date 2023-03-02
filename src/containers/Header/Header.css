@@ -13,6 +13,11 @@
 }
 
 
+.heading{
+  font-family: 'Libre Baskerville', serif;
+}
+
+
 @media only screen and (min-width: 992px)
 {
     .carousel-inner {
@@ -42,11 +47,11 @@
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 767px) {
       .carousel-inner {
-      height: 350px;
+      height: 400px;
   }
   
   .carousel-item, .carousel-item img {
-      height: 350px;
+      height: 400px;
     width:100%
   }
   }

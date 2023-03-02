@@ -3,7 +3,7 @@ import * as React from 'react';
 import Form from '../Form/Form'
 
 
-function Header() {
+function Header(props) {
     return (
         <>
         <div className="header contain">
@@ -16,29 +16,26 @@ function Header() {
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./assets/final_Background.jpg" class="d-block w-100 image" alt="..." style={{objectFit:'fill'}}/>
-                        <div class="carousel-caption d-none d-md-block" >
-                            <h3>First slide label</h3>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/homeBackground2.jpg" class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h3>Second slide label</h3>
-                            <p>Some representatdive placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/header3.png" class="d-block w-100" alt="..."/>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h3>Third slide label</h3>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
                     </div>
                 </div>
             </div>
+            <div class="heading overlay container" >
+                <div style={{marginTop:'-22rem',fontSize:'4rem',color:'white'}}>
+                    {props.heading}
+                </div>
+            </div>
+            <div class="heading overlay container" >
+                <p style={{marginTop:'-17rem',fontSize:'1rem',color:'white'}}>
+                    {props.description}
+                </p>
+
+            </div>
             
-            <div class="overlay container" style={{marginTop:'-10rem'}}><Form/></div>
+            <div class="overlay container" >
+                <div style={{marginTop:'-10rem'}}>
+                    <Form/>
+                </div>
+            </div>
         </div>
             </>
     )

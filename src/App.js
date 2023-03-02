@@ -25,10 +25,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<><Navbar/><Header/><InfoCarousel/><Footer/></>}></Route>
-        <Route path="/contact" element={<><Navbar/><Header/><MyMap/><Footer/></>}></Route>
-        <Route path="/rooms" element={<><Navbar/><Header/><Rooms/><Footer/></>}></Route>
-        <Route path="/gallery" element={<><Navbar/><Header/><HotelGallery/><Footer/></>}></Route>
+        <Route path="/" element={<><Navbar /><Header heading="Hotel Grand 81" description="Sector 81 faridabad "/><InfoCarousel/><Footer/></>}></Route>
+        <Route path="/contact" element={<><Navbar /><Header heading="Contact Us" description=""/><MyMap/><Footer/></>}></Route>
+        <Route path="/rooms" element={<><Navbar /><Header heading="Rooms" description=""/><Rooms/><Footer/></>}></Route>
+        <Route path="/gallery" element={<><Navbar /><Header heading="Gallery" description=""/><HotelGallery/><Footer/></>}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -21,7 +21,22 @@ color: white;
   color: #100c3c;
 }`
 
+
+
 function Form() {
+  const [button, setButtonSize] = useState('small')
+
+  const changeButtonSize=()=>{
+  if(window.width>764)
+  {
+    setButtonSize('large');
+  }
+}
+
+useEffect(() => {
+changeButtonSize()
+});
+
   return (
     <div>
       <div>
@@ -41,7 +56,7 @@ function Form() {
               <Paper square={true} sx={{ boxShadow: 3 }}children={
                 <div class="d-flex flex-row mb-3">
                 <div class="p-2 flex-grow-1 mt-2"><DatePicker square={true} /></div>
-                <div class="p-2 mt-2"><CustomButton size="small" variant="contained" sx={{borderRadius:'0'}}>Check Availability</CustomButton></div>
+                <div class="p-2 mt-2"><CustomButton size={`${window.width>764?'medium':'small'}`} variant="contained" sx={{borderRadius:'0'}}>Check Availability</CustomButton></div>
                 </div>
               }/>
             </Box>

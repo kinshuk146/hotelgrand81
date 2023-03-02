@@ -4,7 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
-
+import './Gallery.css'
 let images=[];
 
 const Allphotos = [
@@ -76,11 +76,12 @@ export default function CustomImageList(props) {
   }
 
   return (
-    <div className="container mt-4">
+    <div className="container">
     <ImageList
       sx={{
         // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
         transform: 'translateZ(0)',
+        overflow:'hidden'
       }}
       rowHeight={200}
       gap={1}

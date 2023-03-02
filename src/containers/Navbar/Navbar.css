@@ -24,7 +24,7 @@
     box-shadow: none;
 }
 
-.heading{
-  font-family: 'Libre Baskerville', serif;
-}
 
+.offcanvas{
+	background-color: #100c3c !important;
+}
