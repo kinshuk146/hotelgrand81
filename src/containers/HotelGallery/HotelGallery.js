@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import { useState } from 'react';
 import Gallery from '../../components/Gallery/Gallery'
 import './HotelGallery.css'
+import { BorderAll, BorderAllOutlined } from '@mui/icons-material';
 
 export default function HotelGallery() {
   const [category, setCategory] = useState('All Photos');
@@ -34,11 +35,11 @@ return (
         m: 0,
       },
     }} variant="text" aria-label="text button group">
-        <Button className="custom" onClick={() => {setCategory('All Photos')}}>ALL PHOTOS</Button>
-        <Button onClick={() => {setCategory('Restaurant')}}>RESTAURANT</Button>
-        <Button onClick={() => {setCategory('Rooms')}}>ROOMS</Button>
-        <Button onClick={() => {setCategory('Banquet')}}>Banquet</Button>
-        <Button onClick={() => {setCategory('Property Pics')}}>Property Pics</Button>
+        <Button  className="custom" onClick={() => {setCategory('All Photos')}} style={{border:'0'}}>ALL</Button>
+        <Button onClick={() => {setCategory('Restaurant')}} style={{border:'0'}}>RESTAURANT</Button>
+        <Button onClick={() => {setCategory('Rooms')}} style={{border:'0'}}>ROOMS</Button>
+        <Button onClick={() => {setCategory('Banquet')}} style={{border:'0'}}>Banquet</Button>
+        <Button onClick={() => {setCategory('Property Pics')}} style={{border:'0'}}>Misc</Button>
       </ButtonGroup>
       </div>
 
