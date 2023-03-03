@@ -20,12 +20,12 @@ function Header(props) {
                 </div>
             </div>
             <div class="heading overlay container " >
-                <div className="mobileResponsiveHeading"style={{marginTop:'-24rem',fontSize:'4rem',color:'white',marginLeft:'1rem'}}>
+                <div className="mobileResponsiveHeading"style={{marginTop:'-24rem',fontSize:'90px',color:'white',marginLeft:'1rem'}}>
                     {props.heading}
                 </div>
             </div>
             <div class="heading overlay container" >
-                <p className="mobileResponsiveParagraph"style={{marginTop:'-19rem',fontSize:'1rem',color:'white',marginLeft:'1rem'}}>
+                <p className="mobileResponsiveParagraph"style={{marginTop:'-19rem',fontSize:'30px',color:'white',marginLeft:'1rem'}}>
                     {props.description}
                 </p>
 
